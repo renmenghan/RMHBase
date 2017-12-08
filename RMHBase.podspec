@@ -30,7 +30,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'RMHBase/Classes/**/*'
+#s.source_files = 'RMHBase/Classes/**/*'
+    s.subspec 'Category' do |c|
+    c.source_files = 'RMHBase/Classes/Category*/*'
+end
   
   # s.resource_bundles = {
   #   'RMHBase' => ['RMHBase/Assets/*.png']
