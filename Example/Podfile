@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RMHBase_Example' do
+  pod 'RMHBase', :path => '../'
+
+  target 'RMHBase_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
