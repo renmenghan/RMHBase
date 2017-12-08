@@ -7,6 +7,7 @@
 //
 
 #import "RMHViewController.h"
+#import "NSArray+NullCheck.h"
 
 @interface RMHViewController ()
 

@@ -1,0 +1,6 @@
+framework module RMHBase {
+  umbrella header "RMHBase-umbrella.h"
+
+  export *
+  module * { export * }
+}

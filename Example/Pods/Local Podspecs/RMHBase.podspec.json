@@ -1,0 +1,22 @@
+{
+  "name": "RMHBase",
+  "version": "0.1.0",
+  "summary": "A short description of RMHBase.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/renmenghan/RMHBase",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "renmenghan": "mrren888@163.com"
+  },
+  "source": {
+    "git": "https://github.com/renmenghan/RMHBase.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RMHBase/Classes/**/*"
+}
