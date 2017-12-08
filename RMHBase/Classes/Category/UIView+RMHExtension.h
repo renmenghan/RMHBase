@@ -124,7 +124,7 @@
 /**
  *  截取当前 view 的截图
  *
- * 
+ *
  */
 - (UIImage *)viewToImage;
 
