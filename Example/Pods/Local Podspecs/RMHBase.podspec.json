@@ -1,9 +1,9 @@
 {
   "name": "RMHBase",
-  "version": "0.1.0",
-  "summary": "A short description of RMHBase.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/renmenghan/RMHBase",
+  "version": "0.1.2",
+  "summary": "RMHBase",
+  "description": "\"RMHBase component\"",
+  "homepage": "https://gitee.com/rrrmmmhhh/RMHBaseComponent",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "renmenghan": "mrren888@163.com"
   },
   "source": {
-    "git": "https://github.com/renmenghan/RMHBase.git",
-    "tag": "0.1.0"
+    "git": "https://gitee.com/rrrmmmhhh/RMHBaseComponent.git",
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "RMHBase/Classes/**/*"
+  "subspecs": [
+    {
+      "name": "Category",
+      "source_files": "RMHBase/Classes/Category*/*"
+    }
+  ]
 }

@@ -12,6 +12,7 @@
 
 #import "NSArray+NullCheck.h"
 #import "NSMutableArray+NullCheck.h"
+#import "UIImage+RMH.h"
 #import "UIView+RMHExtension.h"
 
 FOUNDATION_EXPORT double RMHBaseVersionNumber;

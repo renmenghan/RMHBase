@@ -1,5 +1,7 @@
 PODS:
-  - RMHBase (0.1.0)
+  - RMHBase (0.1.2):
+    - RMHBase/Category (= 0.1.2)
+  - RMHBase/Category (0.1.2)
 
 DEPENDENCIES:
   - RMHBase (from `../`)
@@ -9,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RMHBase: 6b29a871739a4461f599e721fe96477a000b7118
+  RMHBase: 7c837eb95fd056a1755bf5cd27a0f38d6c046a29
 
 PODFILE CHECKSUM: 2781c63880c48668eea125d19f719a088bc03a94
 
