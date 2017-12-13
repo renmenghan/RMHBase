@@ -1,1 +1,1 @@
-../../../../../RMHBase/Classes/BaseMacro/ShortcutMacro.h
+../../../../../RMHBase/Classes/Macro/ShortcutMacro.h

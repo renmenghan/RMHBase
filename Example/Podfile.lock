@@ -15,15 +15,19 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - JSONModel (1.7.0)
-  - RMHBase (0.1.9):
-    - RMHBase/Category (= 0.1.9)
-    - RMHBase/Macro (= 0.1.9)
-    - RMHBase/Network (= 0.1.9)
-  - RMHBase/Category (0.1.9)
-  - RMHBase/Macro (0.1.9)
-  - RMHBase/Network (0.1.9):
-    - AFNetworking
+  - RMHBase (0.1.10):
+    - RMHBase/BaseModel (= 0.1.10)
+    - RMHBase/Category (= 0.1.10)
+    - RMHBase/Macro (= 0.1.10)
+    - RMHBase/Network (= 0.1.10)
+  - RMHBase/BaseModel (0.1.10):
     - JSONModel
+  - RMHBase/Category (0.1.10)
+  - RMHBase/Macro (0.1.10)
+  - RMHBase/Network (0.1.10):
+    - AFNetworking
+    - RMHBase/BaseModel
+    - RMHBase/Macro
 
 DEPENDENCIES:
   - AFNetworking
@@ -37,7 +41,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
-  RMHBase: 5ebd41bb83bad82864b87e11861411e57cbf42f3
+  RMHBase: fe00190f340ecca9c2445ea772224e3f6c218554
 
 PODFILE CHECKSUM: 792f53d50a8d566976652cdcfc1916f07eb5382c
 
