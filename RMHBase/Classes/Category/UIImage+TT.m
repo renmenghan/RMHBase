@@ -6,10 +6,10 @@
 //  Copyright © 2017年 renmenghan. All rights reserved.
 //
 
-#import "UIImage+RMH.h"
+#import "UIImage+TT.h"
 #define IS_IOS8                     (SYSTEM_VERSION >= 8)
 
-@implementation UIImage(RMH)
+@implementation UIImage(TT)
 
 + (UIImage *)imageNamed:(NSString *)name module:(NSString *)moduleName
 {

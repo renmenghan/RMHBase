@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (RMH)
+@interface UIImage (TT)
 // load images form bundle
 + (UIImage *)imageNamed:(NSString *)name module:(NSString *)moduleName;
 

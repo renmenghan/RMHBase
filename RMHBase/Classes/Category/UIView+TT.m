@@ -6,9 +6,9 @@
 //  Copyright © 2016年 任梦晗. All rights reserved.
 //
 
-#import "UIView+RMHExtension.h"
+#import "UIView+TT"
 
-@implementation UIView (RMHExtension)
+@implementation UIView (TT)
 
 - (CGFloat)left {
     return self.frame.origin.x;
