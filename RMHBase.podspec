@@ -49,6 +49,7 @@ Pod::Spec.new do |s|
     n.dependency 'AFNetworking'
     n.dependency 'RMHBase/BaseModel'
     n.dependency 'RMHBase/Macro'
+    n.dependency 'RMHBase/Category'
     end
 
   
