@@ -32,18 +32,18 @@ Pod::Spec.new do |s|
 
 #s.source_files = 'RMHBase/Classes/**/*'
     s.subspec 'Category' do |c|
-    c.source_files = 'RMHBase/Classes/Category*/*'
+    c.source_files = 'RMHBase/Classes/Category/**/*'
 end
     s.subspec 'Network' do |n|
-    n.source_files = 'RMHBase/Classes/Network*/*'
+    n.source_files = 'RMHBase/Classes/Network/**/*'
     n.dependency 'AFNetworking'
 end
     s.subspec 'BaseModel' do |b|
-    b.source_files = 'RMHBase/Classes/BaseModel*/*'
+    b.source_files = 'RMHBase/Classes/BaseModel/**/*'
     b.dependency 'JSONModel'
 end
     s.subspec 'Macro' do |m|
-    m.source_files = 'RMHBase/Classes/BaseMacro*/*'
+    m.source_files = 'RMHBase/Classes/BaseMacro/**/*'
 end
   
   # s.resource_bundles = {
