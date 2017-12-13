@@ -1,6 +1,6 @@
 {
   "name": "RMHBase",
-  "version": "0.1.5",
+  "version": "0.1.9",
   "summary": "RMHBase",
   "description": "\"RMHBase component\"",
   "homepage": "https://gitee.com/rrrmmmhhh/RMHBaseComponent",
@@ -13,37 +13,31 @@
   },
   "source": {
     "git": "https://gitee.com/rrrmmmhhh/RMHBaseComponent.git",
-    "tag": "0.1.5"
+    "tag": "0.1.9"
   },
   "platforms": {
     "ios": "8.0"
   },
   "subspecs": [
     {
+      "name": "Macro",
+      "source_files": "RMHBase/Classes/BaseMacro/**/*"
+    },
+    {
       "name": "Category",
-      "source_files": "RMHBase/Classes/Category*/*"
+      "source_files": "RMHBase/Classes/Category/**/*"
     },
     {
       "name": "Network",
-      "source_files": "RMHBase/Classes/Network*/*",
+      "source_files": "RMHBase/Classes/Network/**/*",
       "dependencies": {
         "AFNetworking": [
 
-        ]
-      }
-    },
-    {
-      "name": "BaseModel",
-      "source_files": "RMHBase/Classes/BaseModel*/*",
-      "dependencies": {
+        ],
         "JSONModel": [
 
         ]
       }
-    },
-    {
-      "name": "Macro",
-      "source_files": "RMHBase/Classes/BaseMacro*/*"
     }
   ]
 }
