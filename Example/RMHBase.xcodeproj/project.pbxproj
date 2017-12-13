@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		087A54B1D0FB999B7203583F /* Pods_RMHBase_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097BF251F99732206A7D47B2 /* Pods_RMHBase_Example.framework */; };
-		281A5ABF12B30B20167CED40 /* Pods_RMHBase_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C486549B9E7C9AFBFE195D0E /* Pods_RMHBase_Tests.framework */; };
+		39820BB43E43F679C645FE95 /* libPods-RMHBase_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF2A10A4AF0E35D205DA8A0 /* libPods-RMHBase_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -24,7 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		E101BDE11FDD293A00B8CE4B /* UIImage+RMH.m in Sources */ = {isa = PBXBuildFile; fileRef = E101BDE01FDD293A00B8CE4B /* UIImage+RMH.m */; };
+		CDE1E7EFBD8E169B2F45394B /* libPods-RMHBase_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AE4E75E0A813D274C8EF04 /* libPods-RMHBase_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0453D9C8C2E995628E50129D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		097BF251F99732206A7D47B2 /* Pods_RMHBase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMHBase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF2A10A4AF0E35D205DA8A0 /* libPods-RMHBase_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RMHBase_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B77ACB44918D9708A596C4 /* RMHBase.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RMHBase.podspec; path = ../RMHBase.podspec; sourceTree = "<group>"; };
 		481705CFCA0A13604826B6D6 /* Pods-RMHBase_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMHBase_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RMHBase_Tests/Pods-RMHBase_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		58F4D3EA4707E218841C7B98 /* Pods-RMHBase_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMHBase_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RMHBase_Example/Pods-RMHBase_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,9 +66,7 @@
 		6F98EF31C1D4E1A3FCFEF7DE /* Pods-RMHBase_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMHBase_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RMHBase_Example/Pods-RMHBase_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C486549B9E7C9AFBFE195D0E /* Pods_RMHBase_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMHBase_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E101BDDF1FDD293A00B8CE4B /* UIImage+RMH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RMH.h"; sourceTree = "<group>"; };
-		E101BDE01FDD293A00B8CE4B /* UIImage+RMH.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RMH.m"; sourceTree = "<group>"; };
+		B9AE4E75E0A813D274C8EF04 /* libPods-RMHBase_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RMHBase_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				087A54B1D0FB999B7203583F /* Pods_RMHBase_Example.framework in Frameworks */,
+				39820BB43E43F679C645FE95 /* libPods-RMHBase_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				281A5ABF12B30B20167CED40 /* Pods_RMHBase_Tests.framework in Frameworks */,
+				CDE1E7EFBD8E169B2F45394B /* libPods-RMHBase_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,8 +123,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				097BF251F99732206A7D47B2 /* Pods_RMHBase_Example.framework */,
-				C486549B9E7C9AFBFE195D0E /* Pods_RMHBase_Tests.framework */,
+				1CF2A10A4AF0E35D205DA8A0 /* libPods-RMHBase_Example.a */,
+				B9AE4E75E0A813D274C8EF04 /* libPods-RMHBase_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,8 +140,6 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				E101BDDF1FDD293A00B8CE4B /* UIImage+RMH.h */,
-				E101BDE01FDD293A00B8CE4B /* UIImage+RMH.m */,
 			);
 			name = "Example for RMHBase";
 			path = RMHBase;
@@ -411,7 +406,6 @@
 				6003F59E195388D20070C39A /* RMHAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RMHViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				E101BDE11FDD293A00B8CE4B /* UIImage+RMH.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

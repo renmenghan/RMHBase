@@ -7,12 +7,18 @@
 //
 
 #import "RMHAppDelegate.h"
+#import "TTNetworkManager.h"
 
 @implementation RMHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    TTNetworkConfig *config = [[TTNetworkConfig alloc] init];
+    config.baseURL = @"https://app.taomengzhe.cn";
+    
+    [TTNetworkManager startWithConfigure:config];
+    
     return YES;
 }
 

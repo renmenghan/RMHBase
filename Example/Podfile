@@ -1,8 +1,11 @@
-use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://gitee.com/rrrmmmhhh/RMHComponentSpecs.git'
+#use_frameworks!
 
 target 'RMHBase_Example' do
   pod 'RMHBase', :path => '../'
-
+  pod 'AFNetworking'
+  pod 'JSONModel'
   target 'RMHBase_Tests' do
     inherit! :search_paths
 

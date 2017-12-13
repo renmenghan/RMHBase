@@ -8,7 +8,7 @@
 
 #import "RMHViewController.h"
 #import "NSArray+NullCheck.h"
-
+#import "TTNetworkManager.h"
 @interface RMHViewController ()
 
 @end
@@ -19,6 +19,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    
+    [[TTNetworkManager sharedInstance] getWithUrl:@"/mall_index" parameters:nil success:^(NSDictionary *result) {
+       
+        NSLog(@"%@",result);
+        
+    } failure:^(StatusModel *status) {
+        NSLog(@"%@",status);
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning

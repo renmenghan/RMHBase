@@ -1,9 +1,35 @@
 PODS:
-  - RMHBase (0.1.2):
-    - RMHBase/Category (= 0.1.2)
-  - RMHBase/Category (0.1.2)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - JSONModel (1.7.0)
+  - RMHBase (0.1.5):
+    - RMHBase/BaseModel (= 0.1.5)
+    - RMHBase/Category (= 0.1.5)
+    - RMHBase/Macro (= 0.1.5)
+    - RMHBase/Network (= 0.1.5)
+  - RMHBase/BaseModel (0.1.5):
+    - JSONModel
+  - RMHBase/Category (0.1.5)
+  - RMHBase/Macro (0.1.5)
+  - RMHBase/Network (0.1.5):
+    - AFNetworking
 
 DEPENDENCIES:
+  - AFNetworking
+  - JSONModel
   - RMHBase (from `../`)
 
 EXTERNAL SOURCES:
@@ -11,8 +37,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RMHBase: 7c837eb95fd056a1755bf5cd27a0f38d6c046a29
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  RMHBase: 0ab5e103b776b685460fe9e82f543966383dd739
 
-PODFILE CHECKSUM: 2781c63880c48668eea125d19f719a088bc03a94
+PODFILE CHECKSUM: 792f53d50a8d566976652cdcfc1916f07eb5382c
 
 COCOAPODS: 1.3.1
