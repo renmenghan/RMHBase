@@ -9,6 +9,7 @@
 #import "BaseModel.h"
 
 @protocol StatusModel
+
 @end
 
 @interface StatusModel : BaseModel
