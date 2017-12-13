@@ -30,9 +30,26 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-s.source_files = 'RMHBase/Classes/**/*'
+#s.source_files = 'RMHBase/Classes/**/*'
+    s.subspec 'Category' do |c|
+    c.source_files = 'XMGFMBase/Classes/Category/**/*'
+    end
 
+    s.subspec 'BaseModel' do |b|
+    b.source_files = 'XMGFMBase/Classes/BaseModel/**/*'
+    b.dependency 'JSONModel'
+    end
 
+    s.subspec 'Macro' do |m|
+    m.source_files = 'XMGFMBase/Classes/Macro/**/*'
+    end
+
+    s.subspec 'Network' do |n|
+    n.source_files = 'XMGFMBase/Classes/Network/**/*'
+    n.dependency 'AFNetworking'
+    n.dependency 'RMHBase/BaseModel'
+    n.dependency 'RMHBase/Macro'
+    end
 
   
   # s.resource_bundles = {
@@ -41,6 +58,5 @@ s.source_files = 'RMHBase/Classes/**/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'AFNetworking'
-    s.dependency 'JSONModel'
+# s.dependency 'AFNetworking'
 end
