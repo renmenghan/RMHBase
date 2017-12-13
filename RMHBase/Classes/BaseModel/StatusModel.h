@@ -7,8 +7,8 @@
 //
 
 #import "BaseModel.h"
-@protocol statusModel
 
+@protocol StatusModel
 @end
 
 @interface StatusModel : BaseModel
