@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RMHBase'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'RMHBase'
 
 # This description is used to generate tags and improve search results.
@@ -33,6 +33,17 @@ Pod::Spec.new do |s|
 #s.source_files = 'RMHBase/Classes/**/*'
     s.subspec 'Category' do |c|
     c.source_files = 'RMHBase/Classes/Category*/*'
+end
+    s.subspec 'Network' do |n|
+    n.source_files = 'RMHBase/Classes/Network*/*'
+    n.dependency 'AFNetworking'
+end
+    s.subspec 'BaseModel' do |b|
+    b.source_files = 'RMHBase/Classes/BaseModel*/*'
+    b.dependency 'JSONModel'
+end
+    s.subspec 'Macro' do |m|
+    m.source_files = 'RMHBase/Classes/BaseMacro*/*'
 end
   
   # s.resource_bundles = {
