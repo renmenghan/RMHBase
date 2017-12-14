@@ -1,0 +1,15 @@
+//
+//  ADModel.h
+//  RMHBase_Example
+//
+//  Created by 任梦晗 on 2017/12/14.
+//  Copyright © 2017年 renmenghan. All rights reserved.
+//
+
+#import "BaseModel.h"
+
+@interface ADModel : BaseModel
+
+@property (nonatomic,copy) NSURL *adImgURL;
+
+@end

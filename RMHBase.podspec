@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RMHBase'
-  s.version          = '0.1.11'
+  s.version          = '0.1.12'
   s.summary          = 'RMHBase'
 
 # This description is used to generate tags and improve search results.
@@ -50,6 +50,10 @@ Pod::Spec.new do |s|
     n.dependency 'RMHBase/BaseModel'
     n.dependency 'RMHBase/Macro'
     n.dependency 'RMHBase/Category'
+    end
+
+    s.subspec 'SliderView' do |sv|
+    sv.source_files = 'RMHBase/Classes/SliderView/**/*'
     end
 
   

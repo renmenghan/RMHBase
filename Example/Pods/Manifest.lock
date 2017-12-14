@@ -15,24 +15,29 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - JSONModel (1.7.0)
-  - RMHBase (0.1.10):
-    - RMHBase/BaseModel (= 0.1.10)
-    - RMHBase/Category (= 0.1.10)
-    - RMHBase/Macro (= 0.1.10)
-    - RMHBase/Network (= 0.1.10)
-  - RMHBase/BaseModel (0.1.10):
+  - RMHBase (0.1.11):
+    - RMHBase/BaseModel (= 0.1.11)
+    - RMHBase/Category (= 0.1.11)
+    - RMHBase/Macro (= 0.1.11)
+    - RMHBase/Network (= 0.1.11)
+  - RMHBase/BaseModel (0.1.11):
     - JSONModel
-  - RMHBase/Category (0.1.10)
-  - RMHBase/Macro (0.1.10)
-  - RMHBase/Network (0.1.10):
+  - RMHBase/Category (0.1.11)
+  - RMHBase/Macro (0.1.11)
+  - RMHBase/Network (0.1.11):
     - AFNetworking
     - RMHBase/BaseModel
+    - RMHBase/Category
     - RMHBase/Macro
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
   - AFNetworking
   - JSONModel
   - RMHBase (from `../`)
+  - SDWebImage
 
 EXTERNAL SOURCES:
   RMHBase:
@@ -41,8 +46,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
-  RMHBase: fe00190f340ecca9c2445ea772224e3f6c218554
+  RMHBase: acb770965d3f2b90c79ddabc62634abc80a5796c
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 792f53d50a8d566976652cdcfc1916f07eb5382c
+PODFILE CHECKSUM: 8091f873dbe21801d79b728518555041f3df7cf6
 
 COCOAPODS: 1.3.1

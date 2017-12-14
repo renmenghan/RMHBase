@@ -16,4 +16,8 @@
 #define DBG(format, ...)
 #endif
 
+// 字体设置
+#define FONT(s)             [UIFont systemFontOfSize:s]
+#define BOLD_FONT(s)        [UIFont boldSystemFontOfSize:s]
+
 #endif /* ShortcutMacro_h */
