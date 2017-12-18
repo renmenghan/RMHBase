@@ -27,9 +27,6 @@
 		E10ED2161FE2151B008FE3E1 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E10ED2151FE2151B008FE3E1 /* BaseRequest.m */; };
 		E10ED2191FE21634008FE3E1 /* MineRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E10ED2181FE21634008FE3E1 /* MineRequest.m */; };
 		E10ED2241FE2B4C7008FE3E1 /* ADModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E10ED2231FE2B4C7008FE3E1 /* ADModel.m */; };
-		E1132ED81FE3760900D58EB3 /* TTViewPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1132ED71FE3760900D58EB3 /* TTViewPagerController.m */; };
-		E1132EDB1FE37A4000D58EB3 /* TTViewPagerBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E1132EDA1FE37A4000D58EB3 /* TTViewPagerBar.m */; };
-		E1132EDE1FE40F2100D58EB3 /* TTViewPagerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E1132EDD1FE40F2100D58EB3 /* TTViewPagerConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,12 +76,6 @@
 		E10ED2181FE21634008FE3E1 /* MineRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineRequest.m; sourceTree = "<group>"; };
 		E10ED2221FE2B4C7008FE3E1 /* ADModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADModel.h; sourceTree = "<group>"; };
 		E10ED2231FE2B4C7008FE3E1 /* ADModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADModel.m; sourceTree = "<group>"; };
-		E1132ED61FE3760900D58EB3 /* TTViewPagerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTViewPagerController.h; sourceTree = "<group>"; };
-		E1132ED71FE3760900D58EB3 /* TTViewPagerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTViewPagerController.m; sourceTree = "<group>"; };
-		E1132ED91FE37A4000D58EB3 /* TTViewPagerBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTViewPagerBar.h; sourceTree = "<group>"; };
-		E1132EDA1FE37A4000D58EB3 /* TTViewPagerBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTViewPagerBar.m; sourceTree = "<group>"; };
-		E1132EDC1FE40F2100D58EB3 /* TTViewPagerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTViewPagerConfig.h; sourceTree = "<group>"; };
-		E1132EDD1FE40F2100D58EB3 /* TTViewPagerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTViewPagerConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +141,6 @@
 		6003F593195388D20070C39A /* Example for RMHBase */ = {
 			isa = PBXGroup;
 			children = (
-				E1132ED51FE375EE00D58EB3 /* ViewPager */,
 				E10ED2121FE213C7008FE3E1 /* BaseClass */,
 				6003F59C195388D20070C39A /* RMHAppDelegate.h */,
 				6003F59D195388D20070C39A /* RMHAppDelegate.m */,
@@ -227,19 +217,6 @@
 				E10ED2151FE2151B008FE3E1 /* BaseRequest.m */,
 			);
 			path = BaseClass;
-			sourceTree = "<group>";
-		};
-		E1132ED51FE375EE00D58EB3 /* ViewPager */ = {
-			isa = PBXGroup;
-			children = (
-				E1132ED61FE3760900D58EB3 /* TTViewPagerController.h */,
-				E1132ED71FE3760900D58EB3 /* TTViewPagerController.m */,
-				E1132ED91FE37A4000D58EB3 /* TTViewPagerBar.h */,
-				E1132EDA1FE37A4000D58EB3 /* TTViewPagerBar.m */,
-				E1132EDC1FE40F2100D58EB3 /* TTViewPagerConfig.h */,
-				E1132EDD1FE40F2100D58EB3 /* TTViewPagerConfig.m */,
-			);
-			path = ViewPager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,11 +428,8 @@
 			files = (
 				E10ED2161FE2151B008FE3E1 /* BaseRequest.m in Sources */,
 				E10ED2241FE2B4C7008FE3E1 /* ADModel.m in Sources */,
-				E1132EDB1FE37A4000D58EB3 /* TTViewPagerBar.m in Sources */,
 				6003F59E195388D20070C39A /* RMHAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RMHViewController.m in Sources */,
-				E1132ED81FE3760900D58EB3 /* TTViewPagerController.m in Sources */,
-				E1132EDE1FE40F2100D58EB3 /* TTViewPagerConfig.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				E10ED2191FE21634008FE3E1 /* MineRequest.m in Sources */,
 			);
