@@ -11,7 +11,7 @@
 #import "NSMutableDictionary+NullCheck.h"
 #import "ResponseModel.h"
 #import "SystemMacro.h"
-#import "UIDevice+TT"
+#import "UIDevice+TT.h"
 
 @implementation TTNetworkConfig
 
