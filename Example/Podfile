@@ -8,7 +8,7 @@ target 'RMHBase_Example' do
   pod 'JSONModel'
   pod  'SDWebImage'
   target 'RMHBase_Tests' do
-    inherit! :search_paths
+inherit! :search_paths
 
     
   end

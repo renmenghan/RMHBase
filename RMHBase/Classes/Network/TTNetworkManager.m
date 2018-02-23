@@ -11,6 +11,7 @@
 #import "NSMutableDictionary+NullCheck.h"
 #import "ResponseModel.h"
 #import "SystemMacro.h"
+#import "UIDevice+TT"
 
 @implementation TTNetworkConfig
 
@@ -426,7 +427,11 @@ static TTNetworkManager *_manager = nil;
     
     // 判断登录状态  添加sign
     
-    [params setSafeObject:@"ios" forKey:@"platform"];
+    [params setSafeObject:@"ios" forKey:@"app_type"];
+    
+    [params setSafeObject:[UIDevice TT_uniqueID] forKey:@"did"];
+    // aes time时间戳 did
+//    [params setSafeObject:@"ios" forKey:@"platform"];
 //    [params setSafeObject:@"" forKey:@"versionName"];
 //    [params setSafeObject:[UIDevice TT_uniqueID] forKey:@"did"];
     
