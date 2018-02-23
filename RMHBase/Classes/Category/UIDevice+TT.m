@@ -8,7 +8,6 @@
 
 #import "UIDevice+TT.h"
 #import "NSString+TT.h"
-#import "AFNetworking.h"
 #import <AdSupport/AdSupport.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
