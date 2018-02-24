@@ -6,8 +6,8 @@
 //  Copyright © 2016年 ivan. All rights reserved.
 //
 
-#import "UIImageView+WebCache.h"
-
+//#import "UIImageView+WebCache.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 /**
  *  UIImageView 扩展
  */

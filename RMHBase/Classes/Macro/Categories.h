@@ -12,7 +12,6 @@
 #import "NSArray+NullCheck.h"
 #import "NSMutableArray+NullCheck.h"
 #import "NSMutableDictionary+NullCheck.h"
-#import "UIColor+TT.h"
 #import "UIView+TT.h"
 #import "UIButton+TT.h"
 #import "UIImageView+TT.h"
