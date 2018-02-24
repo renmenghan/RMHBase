@@ -31,39 +31,39 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
 #s.source_files = 'RMHBase/Classes/**/*'
-    s.subspec 'Category' do |c|
-    c.dependency 'SDWebImage'
-    c.dependency 'RMHBase/Macro'
-    c.source_files = 'RMHBase/Classes/Category/**/*'
-    end
+#   s.subspec 'Category' do |c|
+#    c.dependency 'SDWebImage'
+#    c.dependency 'RMHBase/Macro'
+#   c.source_files = 'RMHBase/Classes/Category/**/*'
+#    end
 
-    s.subspec 'BaseModel' do |b|
-    b.source_files = 'RMHBase/Classes/BaseModel/**/*'
-    b.dependency 'JSONModel'
-    end
+#    s.subspec 'BaseModel' do |b|
+#    b.source_files = 'RMHBase/Classes/BaseModel/**/*'
+#    b.dependency 'JSONModel'
+#   end
 
-    s.subspec 'Macro' do |m|
-    m.dependency 'RMHBase/Category'
-    m.source_files = 'RMHBase/Classes/Macro/**/*'
+#    s.subspec 'Macro' do |m|
+#    m.dependency 'RMHBase/Category'
+#    m.source_files = 'RMHBase/Classes/Macro/**/*'
 
-    end
+#    end
 
-    s.subspec 'Network' do |n|
-    n.source_files = 'RMHBase/Classes/Network/**/*'
-    n.dependency 'AFNetworking'
-    n.dependency 'RMHBase/BaseModel'
-    n.dependency 'RMHBase/Macro'
-    n.dependency 'RMHBase/Category'
-    end
+#    s.subspec 'Network' do |n|
+#    n.source_files = 'RMHBase/Classes/Network/**/*'
+#    n.dependency 'AFNetworking'
+#   n.dependency 'RMHBase/BaseModel'
+#    n.dependency 'RMHBase/Macro'
+#    n.dependency 'RMHBase/Category'
+#    end
 
-    s.subspec 'SliderView' do |sv|
-    sv.source_files = 'RMHBase/Classes/SliderView/**/*'
-    end
+#    s.subspec 'SliderView' do |sv|
+#    sv.source_files = 'RMHBase/Classes/SliderView/**/*'
+#    end
 
-    s.subspec 'ViewPager' do |vp|
-    vp.source_files = 'RMHBase/Classes/ViewPager/**/*'
-    vp.dependency 'RMHBase/Category'
-    end
+#    s.subspec 'ViewPager' do |vp|
+#    vp.source_files = 'RMHBase/Classes/ViewPager/**/*'
+#    vp.dependency 'RMHBase/Category'
+#    end
 
   
    s.resource_bundles = {
@@ -72,5 +72,7 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-# s.dependency 'AFNetworking'
+ s.dependency 'AFNetworking'
+ s.dependency 'SDWebImage'
+    s.dependency    'JSONModel'
 end
