@@ -1,6 +1,6 @@
 {
   "name": "RMHBase",
-  "version": "0.1.19",
+  "version": "0.1.22",
   "summary": "RMHBase",
   "description": "\"RMHBase component\"",
   "homepage": "https://gitee.com/rrrmmmhhh/RMHBaseComponent",
@@ -13,59 +13,25 @@
   },
   "source": {
     "git": "https://gitee.com/rrrmmmhhh/RMHBaseComponent.git",
-    "tag": "0.1.19"
+    "tag": "0.1.22"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "subspecs": [
-    {
-      "name": "Category",
-      "source_files": "RMHBase/Classes/Category/**/*"
-    },
-    {
-      "name": "BaseModel",
-      "source_files": "RMHBase/Classes/BaseModel/**/*",
-      "dependencies": {
-        "JSONModel": [
+  "resource_bundles": {
+    "RMHBase": [
+      "RMHBase/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "AFNetworking": [
 
-        ]
-      }
-    },
-    {
-      "name": "Macro",
-      "source_files": "RMHBase/Classes/Macro/**/*"
-    },
-    {
-      "name": "Network",
-      "source_files": "RMHBase/Classes/Network/**/*",
-      "dependencies": {
-        "AFNetworking": [
+    ],
+    "SDWebImage": [
 
-        ],
-        "RMHBase/BaseModel": [
+    ],
+    "JSONModel": [
 
-        ],
-        "RMHBase/Macro": [
-
-        ],
-        "RMHBase/Category": [
-
-        ]
-      }
-    },
-    {
-      "name": "SliderView",
-      "source_files": "RMHBase/Classes/SliderView/**/*"
-    },
-    {
-      "name": "ViewPager",
-      "source_files": "RMHBase/Classes/ViewPager/**/*",
-      "dependencies": {
-        "RMHBase/Category": [
-
-        ]
-      }
-    }
-  ]
+    ]
+  }
 }

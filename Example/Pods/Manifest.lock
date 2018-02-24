@@ -15,25 +15,10 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - JSONModel (1.7.0)
-  - RMHBase (0.1.19):
-    - RMHBase/BaseModel (= 0.1.19)
-    - RMHBase/Category (= 0.1.19)
-    - RMHBase/Macro (= 0.1.19)
-    - RMHBase/Network (= 0.1.19)
-    - RMHBase/SliderView (= 0.1.19)
-    - RMHBase/ViewPager (= 0.1.19)
-  - RMHBase/BaseModel (0.1.19):
-    - JSONModel
-  - RMHBase/Category (0.1.19)
-  - RMHBase/Macro (0.1.19)
-  - RMHBase/Network (0.1.19):
+  - RMHBase (0.1.22):
     - AFNetworking
-    - RMHBase/BaseModel
-    - RMHBase/Category
-    - RMHBase/Macro
-  - RMHBase/SliderView (0.1.19)
-  - RMHBase/ViewPager (0.1.19):
-    - RMHBase/Category
+    - JSONModel
+    - SDWebImage
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
@@ -51,7 +36,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
-  RMHBase: 5c56c9f4aec681bf1ae2e45a3ffc8a36fde7104b
+  RMHBase: a27372796ed60cbb90f9aa39798b342aeab545aa
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
 PODFILE CHECKSUM: 46fb32649e668448631f72b393a4c1ceda483829
