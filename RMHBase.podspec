@@ -45,4 +45,5 @@ Pod::Spec.new do |s|
     s.dependency 'MBProgressHUD'
     s.dependency 'MBProgressHUD'
     s.dependency 'GTMBase64'
+    s.dependency 'JSONModel'
 end
