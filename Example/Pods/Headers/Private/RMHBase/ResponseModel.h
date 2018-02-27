@@ -1,1 +1,1 @@
-../../../../../RMHBase/Classes/ResponseModel.h
+../../../../../RMHBase/Classes/BaseModel/ResponseModel.h

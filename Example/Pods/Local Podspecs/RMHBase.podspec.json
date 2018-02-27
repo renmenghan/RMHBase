@@ -1,6 +1,6 @@
 {
   "name": "RMHBase",
-  "version": "0.1.29",
+  "version": "0.1.31",
   "summary": "RMHBase",
   "description": "\"RMHBase component\"",
   "homepage": "https://gitee.com/rrrmmmhhh/RMHBaseComponent",
@@ -13,32 +13,108 @@
   },
   "source": {
     "git": "https://gitee.com/rrrmmmhhh/RMHBaseComponent.git",
-    "tag": "0.1.29"
+    "tag": "0.1.31"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "RMHBase/Classes/**/*",
   "resource_bundles": {
     "RMHBase": [
       "RMHBase/Assets/*.png"
     ]
   },
-  "dependencies": {
-    "AFNetworking": [
+  "subspecs": [
+    {
+      "name": "Category",
+      "dependencies": {
+        "SDWebImage": [
 
-    ],
-    "SDWebImage": [
+        ]
+      },
+      "source_files": "RMHBase/Classes/Category/**/*"
+    },
+    {
+      "name": "BaseModel",
+      "source_files": "RMHBase/Classes/BaseModel/**/*",
+      "dependencies": {
+        "JSONModel": [
 
-    ],
-    "MJRefresh": [
+        ]
+      }
+    },
+    {
+      "name": "Macro",
+      "source_files": "RMHBase/Classes/Macro/**/*"
+    },
+    {
+      "name": "Des",
+      "source_files": "RMHBase/Classes/Des/**/*",
+      "dependencies": {
+        "GTMBase64": [
 
-    ],
-    "MBProgressHUD": [
+        ]
+      }
+    },
+    {
+      "name": "SliderView",
+      "source_files": "RMHBase/Classes/SliderView/**/*"
+    },
+    {
+      "name": "ViewPager",
+      "source_files": "RMHBase/Classes/ViewPager/**/*",
+      "dependencies": {
+        "RMHBase/Category": [
 
-    ],
-    "GTMBase64": [
+        ]
+      }
+    },
+    {
+      "name": "BaseController",
+      "source_files": "RMHBase/Classes/BaseController/**/*",
+      "dependencies": {
+        "RMHBase/BaseModel": [
 
-    ]
-  }
+        ],
+        "RMHBase/Macro": [
+
+        ],
+        "RMHBase/Category": [
+
+        ],
+        "RMHBase/Des": [
+
+        ],
+        "MBProgressHUD": [
+
+        ],
+        "MJRefresh": [
+
+        ]
+      }
+    },
+    {
+      "name": "Network",
+      "source_files": "RMHBase/Classes/Network/**/*",
+      "dependencies": {
+        "AFNetworking": [
+
+        ],
+        "RMHBase/BaseModel": [
+
+        ],
+        "RMHBase/Macro": [
+
+        ],
+        "RMHBase/Category": [
+
+        ],
+        "RMHBase/Des": [
+
+        ],
+        "RMHBase/BaseController": [
+
+        ]
+      }
+    }
+  ]
 }

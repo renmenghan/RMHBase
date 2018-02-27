@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RMHBase'
-  s.version          = '0.1.31'
+  s.version          = '0.1.32'
   s.summary          = 'RMHBase'
 
 # This description is used to generate tags and improve search results.
@@ -30,8 +30,56 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-    s.source_files = 'RMHBase/Classes/**/*'
+# s.source_files = 'RMHBase/Classes/**/*'
 
+    s.subspec 'Category' do |c|
+    c.dependency 'SDWebImage'
+    c.source_files = 'RMHBase/Classes/Category/**/*'
+    end
+
+    s.subspec 'BaseModel' do |b|
+    b.source_files = 'RMHBase/Classes/BaseModel/**/*'
+    b.dependency 'JSONModel'
+    end
+
+    s.subspec 'Macro' do |m|
+    m.source_files = 'RMHBase/Classes/Macro/**/*'
+    end
+
+    s.subspec 'Des' do |d|
+    d.source_files = 'RMHBase/Classes/Des/**/*'
+    d.dependency 'GTMBase64'
+    end
+
+
+    s.subspec 'SliderView' do |sv|
+    sv.source_files = 'RMHBase/Classes/SliderView/**/*'
+    end
+
+    s.subspec 'ViewPager' do |vp|
+    vp.source_files = 'RMHBase/Classes/ViewPager/**/*'
+    vp.dependency 'RMHBase/Category'
+    end
+
+    s.subspec 'BaseController' do |bs|
+    bs.source_files = 'RMHBase/Classes/BaseController/**/*'
+    bs.dependency 'RMHBase/BaseModel'
+    bs.dependency 'RMHBase/Macro'
+    bs.dependency 'RMHBase/Category'
+    bs.dependency 'RMHBase/Des'
+    bs.dependency 'MBProgressHUD'
+    bs.dependency 'MJRefresh'
+    end
+
+    s.subspec 'Network' do |n|
+    n.source_files = 'RMHBase/Classes/Network/**/*'
+    n.dependency 'AFNetworking'
+    n.dependency 'RMHBase/BaseModel'
+    n.dependency 'RMHBase/Macro'
+    n.dependency 'RMHBase/Category'
+    n.dependency 'RMHBase/Des'
+    n.dependency 'RMHBase/BaseController'
+    end
   
    s.resource_bundles = {
      'RMHBase' => ['RMHBase/Assets/*.png']
@@ -39,11 +87,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-    s.dependency 'AFNetworking'
-    s.dependency 'SDWebImage'
-    s.dependency 'MJRefresh'
-    s.dependency 'MBProgressHUD'
-    s.dependency 'MBProgressHUD'
-    s.dependency 'GTMBase64'
-    s.dependency 'JSONModel'
+
 end

@@ -1,1 +1,1 @@
-../../../../../RMHBase/Classes/UIImage+TT.h
+../../../../../RMHBase/Classes/Category/UIImage+TT.h

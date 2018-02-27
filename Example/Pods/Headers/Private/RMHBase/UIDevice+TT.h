@@ -1,1 +1,1 @@
-../../../../../RMHBase/Classes/UIDevice+TT.h
+../../../../../RMHBase/Classes/Category/UIDevice+TT.h
