@@ -1,1 +1,1 @@
-../../../../../RMHBase/Classes/BaseController/TTTabBar.h
+../../../../../RMHBase/Classes/TTTabBar.h

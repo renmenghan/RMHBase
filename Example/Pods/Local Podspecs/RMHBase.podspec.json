@@ -1,6 +1,6 @@
 {
   "name": "RMHBase",
-  "version": "0.1.27",
+  "version": "0.1.29",
   "summary": "RMHBase",
   "description": "\"RMHBase component\"",
   "homepage": "https://gitee.com/rrrmmmhhh/RMHBaseComponent",
@@ -13,108 +13,32 @@
   },
   "source": {
     "git": "https://gitee.com/rrrmmmhhh/RMHBaseComponent.git",
-    "tag": "0.1.27"
+    "tag": "0.1.29"
   },
   "platforms": {
     "ios": "8.0"
   },
+  "source_files": "RMHBase/Classes/**/*",
   "resource_bundles": {
     "RMHBase": [
       "RMHBase/Assets/*.png"
     ]
   },
-  "subspecs": [
-    {
-      "name": "Category",
-      "dependencies": {
-        "SDWebImage": [
+  "dependencies": {
+    "AFNetworking": [
 
-        ]
-      },
-      "source_files": "RMHBase/Classes/Category/**/*"
-    },
-    {
-      "name": "BaseModel",
-      "source_files": "RMHBase/Classes/BaseModel/**/*",
-      "dependencies": {
-        "JSONModel": [
+    ],
+    "SDWebImage": [
 
-        ]
-      }
-    },
-    {
-      "name": "Macro",
-      "source_files": "RMHBase/Classes/Macro/**/*"
-    },
-    {
-      "name": "Des",
-      "source_files": "RMHBase/Classes/Des/**/*",
-      "dependencies": {
-        "GTMBase64": [
+    ],
+    "MJRefresh": [
 
-        ]
-      }
-    },
-    {
-      "name": "Network",
-      "source_files": "RMHBase/Classes/Network/**/*",
-      "dependencies": {
-        "AFNetworking": [
+    ],
+    "MBProgressHUD": [
 
-        ],
-        "RMHBase/BaseModel": [
+    ],
+    "GTMBase64": [
 
-        ],
-        "RMHBase/Macro": [
-
-        ],
-        "RMHBase/Category": [
-
-        ],
-        "RMHBase/Des": [
-
-        ]
-      }
-    },
-    {
-      "name": "SliderView",
-      "source_files": "RMHBase/Classes/SliderView/**/*"
-    },
-    {
-      "name": "ViewPager",
-      "source_files": "RMHBase/Classes/ViewPager/**/*",
-      "dependencies": {
-        "RMHBase/Category": [
-
-        ]
-      }
-    },
-    {
-      "name": "BaseController",
-      "source_files": "RMHBase/Classes/BaseController/**/*",
-      "dependencies": {
-        "RMHBase/BaseModel": [
-
-        ],
-        "RMHBase/Macro": [
-
-        ],
-        "RMHBase/Category": [
-
-        ],
-        "RMHBase/Network": [
-
-        ],
-        "RMHBase/Des": [
-
-        ],
-        "MBProgressHUD": [
-
-        ],
-        "MJRefresh": [
-
-        ]
-      }
-    }
-  ]
+    ]
+  }
 }

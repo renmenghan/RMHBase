@@ -1,1 +1,1 @@
-../../../../../RMHBase/Classes/BaseController/TTTabbarItem.h
+../../../../../RMHBase/Classes/TTTabbarItem.h

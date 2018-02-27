@@ -1,1 +1,1 @@
-../../../../../RMHBase/Classes/BaseController/TTModuleEntrance.h
+../../../../../RMHBase/Classes/TTModuleEntrance.h

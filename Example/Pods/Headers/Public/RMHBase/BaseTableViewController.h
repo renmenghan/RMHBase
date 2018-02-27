@@ -1,1 +1,1 @@
-../../../../../RMHBase/Classes/BaseController/BaseTableViewController.h
+../../../../../RMHBase/Classes/BaseTableViewController.h
