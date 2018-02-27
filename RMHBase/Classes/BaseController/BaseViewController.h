@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TTTabbarItem.h"
 #import "TTNavigationBar.h"
-#import <MBProgressHUD.h>
+#import "MBProgressHUD.h"
 
 @class TTTabBarController;
 
