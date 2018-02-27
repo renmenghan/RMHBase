@@ -12,7 +12,8 @@
 #import "ResponseModel.h"
 #import "SystemMacro.h"
 #import "UIDevice+TT.h"
-
+#import "Des.h"
+#import "UserService.h"
 @implementation TTNetworkConfig
 
 @end
@@ -53,6 +54,8 @@ static TTNetworkManager *_manager = nil;
         
         _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json",@"text/javascript",@"text/html", nil];
         
+        [_manager.requestSerializer setValue:@"application/x-www-form-urlencoded;charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+
         
     });
 }
@@ -426,15 +429,18 @@ static TTNetworkManager *_manager = nil;
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     
     // 判断登录状态  添加sign
-    
-    [params setSafeObject:@"ios" forKey:@"app_type"];
-    
-    [params setSafeObject:[UIDevice TT_uniqueID] forKey:@"did"];
-    // aes time时间戳 did
-//    [params setSafeObject:@"ios" forKey:@"platform"];
-//    [params setSafeObject:@"" forKey:@"versionName"];
+    if ([UserService sharedService].isLogin) {
+         [self.requestSerializer setValue:[UserService sharedService].token forHTTPHeaderField:@"access_user_token"];
+    }
+//    [params setSafeObject:@"ios" forKey:@"app_type"];
 //    [params setSafeObject:[UIDevice TT_uniqueID] forKey:@"did"];
+    NSString *appType = @"ios";
+    NSString *did = [UIDevice TT_uniqueID];
+    NSTimeInterval interval = [[NSDate date] timeIntervalSince1970] * 1000;
     
+    NSString *sign =[Des encryptUseDES:[NSString stringWithFormat:@"apptype=%@&did=%@&time=%.0f&version=%@",appType,did,interval,[[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"]] key:@"qwsxcfui"];
+    [self.requestSerializer setValue:sign forHTTPHeaderField:@"sign"];
+
     [params addEntriesFromDictionary:parameters];
     
     if (self.currentConfig.globalParams) {

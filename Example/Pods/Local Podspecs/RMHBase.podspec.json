@@ -1,6 +1,6 @@
 {
   "name": "RMHBase",
-  "version": "0.1.21",
+  "version": "0.1.27",
   "summary": "RMHBase",
   "description": "\"RMHBase component\"",
   "homepage": "https://gitee.com/rrrmmmhhh/RMHBaseComponent",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://gitee.com/rrrmmmhhh/RMHBaseComponent.git",
-    "tag": "0.1.21"
+    "tag": "0.1.27"
   },
   "platforms": {
     "ios": "8.0"
@@ -28,9 +28,6 @@
       "name": "Category",
       "dependencies": {
         "SDWebImage": [
-
-        ],
-        "RMHBase/Macro": [
 
         ]
       },
@@ -50,6 +47,15 @@
       "source_files": "RMHBase/Classes/Macro/**/*"
     },
     {
+      "name": "Des",
+      "source_files": "RMHBase/Classes/Des/**/*",
+      "dependencies": {
+        "GTMBase64": [
+
+        ]
+      }
+    },
+    {
       "name": "Network",
       "source_files": "RMHBase/Classes/Network/**/*",
       "dependencies": {
@@ -64,6 +70,9 @@
         ],
         "RMHBase/Category": [
 
+        ],
+        "RMHBase/Des": [
+
         ]
       }
     },
@@ -76,6 +85,33 @@
       "source_files": "RMHBase/Classes/ViewPager/**/*",
       "dependencies": {
         "RMHBase/Category": [
+
+        ]
+      }
+    },
+    {
+      "name": "BaseController",
+      "source_files": "RMHBase/Classes/BaseController/**/*",
+      "dependencies": {
+        "RMHBase/BaseModel": [
+
+        ],
+        "RMHBase/Macro": [
+
+        ],
+        "RMHBase/Category": [
+
+        ],
+        "RMHBase/Network": [
+
+        ],
+        "RMHBase/Des": [
+
+        ],
+        "MBProgressHUD": [
+
+        ],
+        "MJRefresh": [
 
         ]
       }

@@ -11,6 +11,8 @@
 #define SystemMacro_h
 
 #define SYSTEM_VERSION        [[[UIDevice currentDevice] systemVersion] floatValue]
+#define IS_IOS11                     (SYSTEM_VERSION >= 11)
+#define IS_IOS10                     (SYSTEM_VERSION >= 10)
 
 #define IS_IOS9                     (SYSTEM_VERSION >= 9)
 #define IS_IOS8                     (SYSTEM_VERSION >= 8)
