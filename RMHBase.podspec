@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RMHBase'
-  s.version          = '0.1.28'
+  s.version          = '0.1.29'
   s.summary          = 'RMHBase'
 
 # This description is used to generate tags and improve search results.
@@ -50,14 +50,7 @@ Pod::Spec.new do |s|
     d.dependency 'GTMBase64'
     end
 
-    s.subspec 'Network' do |n|
-    n.source_files = 'RMHBase/Classes/Network/**/*'
-    n.dependency 'AFNetworking'
-    n.dependency 'RMHBase/BaseModel'
-    n.dependency 'RMHBase/Macro'
-    n.dependency 'RMHBase/Category'
-    n.dependency 'RMHBase/Des'
-    end
+
 
     s.subspec 'SliderView' do |sv|
     sv.source_files = 'RMHBase/Classes/SliderView/**/*'
@@ -73,10 +66,19 @@ Pod::Spec.new do |s|
     bs.dependency 'RMHBase/BaseModel'
     bs.dependency 'RMHBase/Macro'
     bs.dependency 'RMHBase/Category'
-    bs.dependency 'RMHBase/Network'
     bs.dependency 'RMHBase/Des'
     bs.dependency 'MBProgressHUD'
-bs.dependency 'MJRefresh'
+    bs.dependency 'MJRefresh'
+    end
+
+    s.subspec 'Network' do |n|
+    n.source_files = 'RMHBase/Classes/Network/**/*'
+    n.dependency 'AFNetworking'
+    n.dependency 'RMHBase/BaseModel'
+    n.dependency 'RMHBase/Macro'
+    n.dependency 'RMHBase/Category'
+    n.dependency 'RMHBase/Des'
+    n.dependency 'RMHBase/BaseController'
     end
 
   
