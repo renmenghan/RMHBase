@@ -13,7 +13,11 @@
 #import "UIView+TT.h"
 #import "UIButton+TT.h"
 #import "TTAppThemeHelper.h"
+#import "MBProgressHUD.h"
+
 @interface BaseViewController ()
+
+@property (nonatomic, strong) MBProgressHUD *noticeView;
 
 @end
 

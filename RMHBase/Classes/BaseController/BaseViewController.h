@@ -9,14 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "TTTabbarItem.h"
 #import "TTNavigationBar.h"
-#import "MBProgressHUD.h"
 
 @class TTTabBarController;
 
 @interface BaseViewController : UIViewController
 @property (nonatomic, assign) BOOL needBlurEffect;
 @property (nonatomic, strong) TTNavigationBar *navigationBar;
-@property (nonatomic, strong) MBProgressHUD *noticeView;
 
 /**
  *  当前 ViewController 的 view 的 frame
