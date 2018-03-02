@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RMHBase'
-  s.version          = '0.1.43'
+  s.version          = '0.1.44'
   s.summary          = 'RMHBase'
 
 # This description is used to generate tags and improve search results.
@@ -57,10 +57,7 @@ Pod::Spec.new do |s|
     sv.source_files = 'RMHBase/Classes/SliderView/**/*'
     end
 
-    s.subspec 'ViewPager' do |vp|
-    vp.source_files = 'RMHBase/Classes/ViewPager/**/*'
-    vp.dependency 'RMHBase/Category'
-    end
+
 
     s.subspec 'BaseController' do |bs|
     bs.source_files = 'RMHBase/Classes/BaseController/**/*'
@@ -81,6 +78,12 @@ Pod::Spec.new do |s|
     n.dependency 'RMHBase/Category'
     n.dependency 'RMHBase/Des'
     n.dependency 'RMHBase/BaseController'
+    end
+
+    s.subspec 'ViewPager' do |vp|
+    vp.source_files = 'RMHBase/Classes/ViewPager/**/*'
+    vp.dependency 'RMHBase/Category'
+    vp.dependency 'RMHBase/BaseController'
     end
   
    s.resource_bundles = {

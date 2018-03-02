@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TTViewPagerBar.h"
+#import "BaseViewController.h"
 
-@interface TTViewPagerController : UIViewController
+@interface TTViewPagerController : BaseViewController
 
 -(void) setUpWithItems:(NSArray<NSString *> *)items childVCs:(NSArray<UIViewController *> *)childVCs;
 @property (nonatomic,assign) BOOL isNav;
