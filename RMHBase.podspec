@@ -86,7 +86,7 @@ Pod::Spec.new do |s|
      'RMHBase' => ['RMHBase/Assets/*.png']
    }
 
-    s.public_header_files = 'RMHBase/Classes/*.h'
+    s.public_header_files = 'RMHBase/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 
 end
