@@ -29,7 +29,7 @@
 #import "TTTabBar.h"
 
 #import "TTSliderView.h"
-#import "TTViewPagerController"
+#import "TTViewPagerController.h"
 
 #import "UserService.h"
 #endif
