@@ -20,7 +20,8 @@
 
 #define NAVBAR_HEIGHT               (44.f + STATUSBAR_HEIGHT)
 #define NAVBAR_CONTAINER_HEIGHT     44.f
-
+// viewPager tabbar 高度
+#define TabsViewHeight 39
 // 下单流程底部bar高度
 #define TOTAL_BAR_VIEW_HEIGHT 62
 #endif /* UIMacro_h */

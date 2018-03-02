@@ -153,7 +153,7 @@
     CGFloat lastX = caculateMargin;
     for (UIButton *btn in self.itemBtns) {
         [btn sizeToFit];
-        btn.top = 0;
+        btn.top = 3;
         btn.left = lastX;
         lastX += btn.width + caculateMargin;
     }
