@@ -22,4 +22,8 @@
 #define IS_IPHONE6                  (SCREEN_HEIGHT == 667)
 #define IS_IPHONE6Plus              (SCREEN_HEIGHT == 736)
 
+#define APP_LOCAL_SCHEME @"rmh"
+//标准宏
+#define LOCALSCHEME(x,...)  [NSString stringWithFormat:(@"%@://" x),APP_LOCAL_SCHEME,##__VA_ARGS__]
+
 #endif /* SystemMacro_h */

@@ -26,6 +26,8 @@
 #define KEY_GENDER  @"com.rmh.modules.megabase.userService.gender"
 #define KEY_ACCOUNT @"com.rmh.modules.megabase.userService.account"
 #define KEY_TOKEN   @"com.rmh.modules.megabase.userService.token"
+#define KEY_SIGNATURE   @"com.rmh.modules.megabase.userService.signature"
+
 @implementation UserService
 
 
@@ -57,6 +59,7 @@
             self.gender = [defaults stringForKey:KEY_GENDER];
             self.account = [defaults stringForKey:KEY_ACCOUNT];
             self.token = [defaults stringForKey:KEY_TOKEN];
+            self.signature = [defaults stringForKey:KEY_SIGNATURE];
             self.extraParams = [defaults dictionaryForKey:KEY_EXTRA];
         }
         
@@ -82,6 +85,7 @@
     self.gender = [defaults stringForKey:KEY_GENDER];
     self.account = [defaults stringForKey:KEY_ACCOUNT];
     self.token = [defaults stringForKey:KEY_TOKEN];
+    self.signature = [defaults stringForKey:KEY_SIGNATURE];
     self.extraParams = [defaults dictionaryForKey:KEY_EXTRA];
 }
 
@@ -113,7 +117,7 @@
     
     [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFY_USER_LOGOUT_COMPLETED object:nil];
     
-    [[TTNavigationService sharedService] openUrl:[NSString stringWithFormat:@"%@://index",@"rmh"]];
+    [[TTNavigationService sharedService] openUrl:[NSString stringWithFormat:@"%@", LOCALSCHEME(@"login")]];
     
 }
 

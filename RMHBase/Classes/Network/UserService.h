@@ -20,6 +20,7 @@
 @property (nonatomic, strong) NSString *gender;
 @property (nonatomic, strong) NSString *token;
 @property (nonatomic, strong) NSString *account;
+@property (nonatomic,strong) NSString *signature;
 @property (nonatomic, assign) BOOL isLogin;
 
 @property (nonatomic, strong) NSDictionary *extraParams;

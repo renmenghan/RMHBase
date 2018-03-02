@@ -55,7 +55,7 @@ static TTNetworkManager *_manager = nil;
         _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json",@"text/javascript",@"text/html", nil];
         
         [_manager.requestSerializer setValue:@"application/x-www-form-urlencoded;charset=utf-8" forHTTPHeaderField:@"Content-Type"];
-
+        
         
     });
 }
@@ -113,12 +113,12 @@ static TTNetworkManager *_manager = nil;
 
 - (void)postWithUrl:(NSString *)URLString parameters:(NSDictionary *)parameters success:(void (^)(NSDictionary *))success failure:(void (^)(StatusModel *))failure
 {
-#ifdef DEBUG
-    [self getWithUrl:URLString parameters:parameters progress:nil success:success failure:failure];
-#else
-     [self postWithUrl:URLString parameters:parameters progress:nil success:success failure:failure];
-#endif
-   
+    //#ifdef DEBUG
+    //    [self getWithUrl:URLString parameters:parameters progress:nil success:success failure:failure];
+    //#else
+    [self postWithUrl:URLString parameters:parameters progress:nil success:success failure:failure];
+    //#endif
+    
 }
 
 - (void)postWithUrl:(NSString *)URLString parameters:(NSDictionary *)parameters progress:(void (^)(NSProgress *))progress success:(void (^)(NSDictionary *))success failure:(void (^)(StatusModel *))failure
@@ -196,7 +196,7 @@ static TTNetworkManager *_manager = nil;
             if (image) {
                 NSData *data = UIImageJPEGRepresentation(image, 1);
                 
-                [formData appendPartWithFileData:data name:@"image" fileName:@"image.jpg" mimeType:@"image/jpeg"];
+                [formData appendPartWithFileData:data name:@"file" fileName:@"image.jpg" mimeType:@"image/jpeg"];
             }
             
         } progress:^(NSProgress *uploadProgress) {
@@ -213,7 +213,7 @@ static TTNetworkManager *_manager = nil;
             }
             
         } failure:^(StatusModel *status) {
-           
+            
             if (failure) {
                 failure(status);
             }
@@ -228,19 +228,19 @@ static TTNetworkManager *_manager = nil;
         NSString *tmpFilename = [NSString stringWithFormat:@"%f",[NSDate timeIntervalSinceReferenceDate]];
         NSURL *tmpFileUrl = [NSURL fileURLWithPath:[NSTemporaryDirectory() stringByAppendingPathComponent:tmpFilename]];
         // Create a multipart form request.
-        NSMutableURLRequest *multipartRequest = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" 
+        NSMutableURLRequest *multipartRequest = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST"
                                                                                                            URLString:[NSString stringWithFormat:@"%@%@",self.baseURL,URLString]
                                                                                                           parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData)
-        {
-            
-            if (image) {
-                NSData *imageData = UIImageJPEGRepresentation(image, 1);
-                
-                [formData appendPartWithFileData:imageData name:@"image" fileName:@"image.jpg" mimeType:@"image/jpeg"];
-                
-            }
-            
-        } error:nil];
+                                                 {
+                                                     
+                                                     if (image) {
+                                                         NSData *imageData = UIImageJPEGRepresentation(image, 1);
+                                                         
+                                                         [formData appendPartWithFileData:imageData name:@"image" fileName:@"image.jpg" mimeType:@"image/jpeg"];
+                                                         
+                                                     }
+                                                     
+                                                 } error:nil];
         
         [[AFHTTPRequestSerializer serializer] requestWithMultipartFormRequest:multipartRequest writingStreamContentsToFile:tmpFileUrl completionHandler:^(NSError * _Nullable error) {
             
@@ -288,7 +288,7 @@ static TTNetworkManager *_manager = nil;
                 
                 NSData *data = UIImageJPEGRepresentation(image, 1);
                 
-                 [formData appendPartWithFileData:data name:@"image[]" fileName:[NSString stringWithFormat:@"image%d.jpg",index] mimeType:@"image/jpeg"];
+                [formData appendPartWithFileData:data name:@"image[]" fileName:[NSString stringWithFormat:@"image%d.jpg",index] mimeType:@"image/jpeg"];
                 
                 index++;
             }
@@ -378,7 +378,7 @@ static TTNetworkManager *_manager = nil;
     
     ResponseModel *responseModel =  [[ResponseModel alloc] initWithDictionary:responseDictionary error:nil];
 #pragma mark - 请求成功状态值判断
-    if (responseModel && responseModel.status && 1001 == responseModel.status.code) {
+    if (responseModel && responseModel.status && 1 == responseModel.status.code) {
         if (success)
         {
             success(responseModel.result);
@@ -430,23 +430,33 @@ static TTNetworkManager *_manager = nil;
     
     // 判断登录状态  添加sign
     if ([UserService sharedService].isLogin) {
-         [self.requestSerializer setValue:[UserService sharedService].token forHTTPHeaderField:@"access_user_token"];
+        [self.requestSerializer setValue:[UserService sharedService].token forHTTPHeaderField:@"access_user_token"];
     }
-//    [params setSafeObject:@"ios" forKey:@"app_type"];
-//    [params setSafeObject:[UIDevice TT_uniqueID] forKey:@"did"];
+    //    [params setSafeObject:@"ios" forKey:@"app_type"];
+    //    [params setSafeObject:[UIDevice TT_uniqueID] forKey:@"did"];
     NSString *appType = @"ios";
+    [self.requestSerializer setValue:appType forHTTPHeaderField:@"app_type"];
     NSString *did = [UIDevice TT_uniqueID];
+    [self.requestSerializer setValue:did forHTTPHeaderField:@"did"];
     NSTimeInterval interval = [[NSDate date] timeIntervalSince1970] * 1000;
+    [self.requestSerializer setValue:[NSString stringWithFormat:@"%.0f",interval] forHTTPHeaderField:@"time"];
     
-    NSString *sign =[Des encryptUseDES:[NSString stringWithFormat:@"apptype=%@&did=%@&time=%.0f&version=%@",appType,did,interval,[[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"]] key:@"qwsxcfui"];
+    
+    NSString *sign =[Des encryptUseDES:[NSString stringWithFormat:@"app_type=%@&did=%@&time=%.0f&version=%@",appType,did,interval,[[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"]] key:@"qwsxcfui"];
+    
+    DBG(@"sign---%@",sign);
+    DBG(@"sign---%@",[Des decryptUseDES:sign key:@"qwsxcfui"]);
+    
+    
     [self.requestSerializer setValue:sign forHTTPHeaderField:@"sign"];
-
+    
     [params addEntriesFromDictionary:parameters];
     
     if (self.currentConfig.globalParams) {
         [params addEntriesFromDictionary:self.currentConfig.globalParams];
     }
     return params;
-
+    
 }
 @end
+

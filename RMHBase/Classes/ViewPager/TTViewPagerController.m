@@ -22,7 +22,7 @@
     if (!_viewPagerBar) {
         _viewPagerBar = [TTViewPagerBar viewPagerBarWithFrame:CGRectZero];
         _viewPagerBar.delegate = self;
-        _viewPagerBar.backgroundColor = [UIColor brownColor];
+        _viewPagerBar.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:_viewPagerBar];
     }
     return _viewPagerBar;
