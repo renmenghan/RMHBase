@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RMHBase'
-  s.version          = '0.1.35'
+  s.version          = '0.1.36'
   s.summary          = 'RMHBase'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
- s.source_files = 'RMHBase/Classes/**/*'
+# s.source_files = 'RMHBase/Classes/**/*'
 
     s.subspec 'Category' do |c|
     c.dependency 'SDWebImage'
@@ -85,7 +85,7 @@ Pod::Spec.new do |s|
      'RMHBase' => ['RMHBase/Assets/*.png']
    }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+   s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 
 end
