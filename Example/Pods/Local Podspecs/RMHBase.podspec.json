@@ -1,6 +1,6 @@
 {
   "name": "RMHBase",
-  "version": "0.1.33",
+  "version": "0.1.42",
   "summary": "RMHBase",
   "description": "\"RMHBase component\"",
   "homepage": "https://gitee.com/rrrmmmhhh/RMHBaseComponent",
@@ -13,12 +13,11 @@
   },
   "source": {
     "git": "https://gitee.com/rrrmmmhhh/RMHBaseComponent.git",
-    "tag": "0.1.33"
+    "tag": "0.1.42"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "RMHBase/Classes/**/*",
   "resource_bundles": {
     "RMHBase": [
       "RMHBase/Assets/*.png"
@@ -72,6 +71,7 @@
     {
       "name": "BaseController",
       "source_files": "RMHBase/Classes/BaseController/**/*",
+      "public_header_files": "RMHBase/Classes/BaseController/**/*.h",
       "dependencies": {
         "RMHBase/BaseModel": [
 

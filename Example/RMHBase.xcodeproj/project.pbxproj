@@ -376,7 +376,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RMHBase_Example/Pods-RMHBase_Example-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/RMHBase/RMHBase.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/RMHBase/RMHBase.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
