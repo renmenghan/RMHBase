@@ -106,6 +106,30 @@
 #pragma -mark action
 - (void)didSelect
 {
+    [UIView animateWithDuration:0.1 animations:
+     ^(void){
+         
+         self.transform = CGAffineTransformScale(CGAffineTransformIdentity,0.8, 0.8);
+         
+         
+     } completion:^(BOOL finished){//do other thing
+         [UIView animateWithDuration:0.2 animations:
+          ^(void){
+              
+              self.transform = CGAffineTransformScale(CGAffineTransformIdentity,1.1, 1.1);
+              
+          } completion:^(BOOL finished){//do other thing
+              [UIView animateWithDuration:0.1 animations:
+               ^(void){
+                   
+                   self.transform = CGAffineTransformScale(CGAffineTransformIdentity,1,1);
+                   
+                   
+               } completion:^(BOOL finished){//do other thing
+               }];
+          }];
+     }];
+    
     if ([self.delegate respondsToSelector:@selector(tabBarItemdidSelected:)]) {
         [self.delegate tabBarItemdidSelected:self];
     }

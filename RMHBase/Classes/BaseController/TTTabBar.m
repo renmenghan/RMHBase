@@ -51,7 +51,7 @@
     }
     
     //描边
-    UIView *topLine = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_HEIGHT, 1 / [UIScreen mainScreen].scale)];
+    UIView *topLine = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_HEIGHT, 1 )];
     topLine.backgroundColor = [TTAppThemeHelper defaultTheme].tabbarTopColor;
     //topLine.backgroundColor = [UIColor whiteColor];
     [self addSubview:topLine];

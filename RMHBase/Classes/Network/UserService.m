@@ -117,7 +117,7 @@
     
     [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFY_USER_LOGOUT_COMPLETED object:nil];
     
-    [[TTNavigationService sharedService] openUrl:[NSString stringWithFormat:@"%@", LOCALSCHEME(@"login")]];
+    [[TTNavigationService sharedService] openUrl:[NSString stringWithFormat:@"%@", LOCALSCHEME(@"loginAnimation")]];
     
 }
 

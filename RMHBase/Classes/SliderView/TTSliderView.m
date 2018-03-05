@@ -76,8 +76,8 @@ static NSInteger const radio = 3;
 {
     if (!_pageControl) {
         UIPageControl *pageControl = [[UIPageControl alloc] init];
-        pageControl.pageIndicatorTintColor = [UIColor grayColor];
-        pageControl.currentPageIndicatorTintColor = [UIColor orangeColor];
+        pageControl.pageIndicatorTintColor = [UIColor colorWithWhite:1 alpha:0.8];
+        pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
         pageControl.hidesForSinglePage = YES;
         [self addSubview:pageControl];
         _pageControl = pageControl;
