@@ -24,7 +24,6 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		CDE1E7EFBD8E169B2F45394B /* libPods-RMHBase_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AE4E75E0A813D274C8EF04 /* libPods-RMHBase_Tests.a */; };
-		E10ED2161FE2151B008FE3E1 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E10ED2151FE2151B008FE3E1 /* BaseRequest.m */; };
 		E10ED2191FE21634008FE3E1 /* MineRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E10ED2181FE21634008FE3E1 /* MineRequest.m */; };
 		E10ED2241FE2B4C7008FE3E1 /* ADModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E10ED2231FE2B4C7008FE3E1 /* ADModel.m */; };
 /* End PBXBuildFile section */
@@ -70,8 +69,6 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9AE4E75E0A813D274C8EF04 /* libPods-RMHBase_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RMHBase_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E10ED2141FE2151B008FE3E1 /* BaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
-		E10ED2151FE2151B008FE3E1 /* BaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
 		E10ED2171FE21634008FE3E1 /* MineRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineRequest.h; sourceTree = "<group>"; };
 		E10ED2181FE21634008FE3E1 /* MineRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineRequest.m; sourceTree = "<group>"; };
 		E10ED2221FE2B4C7008FE3E1 /* ADModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADModel.h; sourceTree = "<group>"; };
@@ -213,8 +210,6 @@
 		E10ED2121FE213C7008FE3E1 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				E10ED2141FE2151B008FE3E1 /* BaseRequest.h */,
-				E10ED2151FE2151B008FE3E1 /* BaseRequest.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -430,7 +425,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E10ED2161FE2151B008FE3E1 /* BaseRequest.m in Sources */,
 				E10ED2241FE2B4C7008FE3E1 /* ADModel.m in Sources */,
 				6003F59E195388D20070C39A /* RMHAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RMHViewController.m in Sources */,

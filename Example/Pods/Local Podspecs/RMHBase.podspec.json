@@ -1,6 +1,6 @@
 {
   "name": "RMHBase",
-  "version": "0.1.43",
+  "version": "0.1.46",
   "summary": "RMHBase",
   "description": "\"RMHBase component\"",
   "homepage": "https://gitee.com/rrrmmmhhh/RMHBaseComponent",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://gitee.com/rrrmmmhhh/RMHBaseComponent.git",
-    "tag": "0.1.43"
+    "tag": "0.1.46"
   },
   "platforms": {
     "ios": "8.0"
@@ -62,15 +62,6 @@
       "source_files": "RMHBase/Classes/SliderView/**/*"
     },
     {
-      "name": "ViewPager",
-      "source_files": "RMHBase/Classes/ViewPager/**/*",
-      "dependencies": {
-        "RMHBase/Category": [
-
-        ]
-      }
-    },
-    {
       "name": "BaseController",
       "source_files": "RMHBase/Classes/BaseController/**/*",
       "dependencies": {
@@ -111,6 +102,18 @@
 
         ],
         "RMHBase/Des": [
+
+        ],
+        "RMHBase/BaseController": [
+
+        ]
+      }
+    },
+    {
+      "name": "ViewPager",
+      "source_files": "RMHBase/Classes/ViewPager/**/*",
+      "dependencies": {
+        "RMHBase/Category": [
 
         ],
         "RMHBase/BaseController": [

@@ -440,8 +440,7 @@ static TTNetworkManager *_manager = nil;
     [self.requestSerializer setValue:did forHTTPHeaderField:@"did"];
     NSTimeInterval interval = [[NSDate date] timeIntervalSince1970] * 1000;
     [self.requestSerializer setValue:[NSString stringWithFormat:@"%.0f",interval] forHTTPHeaderField:@"time"];
-    
-    
+    [self.requestSerializer setValue:[[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"] forHTTPHeaderField:@"version"];
     NSString *sign =[Des encryptUseDES:[NSString stringWithFormat:@"app_type=%@&did=%@&time=%.0f&version=%@",appType,did,interval,[[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"]] key:@"qwsxcfui"];
     
     DBG(@"sign---%@",sign);
