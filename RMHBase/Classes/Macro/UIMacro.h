@@ -13,7 +13,7 @@
 #define IS_IPHONEX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
 // 屏幕高度
-#define SCREEN_HEIGHT         [[UIScreen mainScreen] bounds].size.height
+#define SCREEN_HEIGHT         ([[UIScreen mainScreen] bounds].size.height -SAFE_BOTTOM_HEIGHT)
 
 // 屏幕宽度
 #define SCREEN_WIDTH          [[UIScreen mainScreen] bounds].size.width

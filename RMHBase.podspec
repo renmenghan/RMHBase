@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RMHBase'
-  s.version          = '0.1.49'
+  s.version          = '0.1.50'
   s.summary          = 'RMHBase'
 
 # This description is used to generate tags and improve search results.
