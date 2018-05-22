@@ -13,7 +13,7 @@
 #define IS_IPHONEX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
 // 屏幕高度
-#define SCREEN_HEIGHT         ([[UIScreen mainScreen] bounds].size.height -SAFE_BOTTOM_HEIGHT)
+#define SCREEN_HEIGHT         [[UIScreen mainScreen] bounds].size.height
 
 // 屏幕宽度
 #define SCREEN_WIDTH          [[UIScreen mainScreen] bounds].size.width
@@ -27,6 +27,8 @@
 #define NAVBAR_HEIGHT               (44.f + STATUSBAR_HEIGHT)
 
 #define NAVBAR_CONTAINER_HEIGHT     44.f
+
+#define NO_SAFE_TABBAR_HEIGHT       49.f
 
 // viewPager tabbar 高度
 #define TabsViewHeight 39
