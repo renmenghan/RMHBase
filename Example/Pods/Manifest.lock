@@ -49,6 +49,7 @@ PODS:
     - RMHBase/Category
     - RMHBase/Des
     - RMHBase/Macro
+    - RMHBase/TTRouter
   - RMHBase/SliderView (0.1.52)
   - RMHBase/TTRouter (0.1.52):
     - RMHBase/Category
@@ -85,7 +86,7 @@ SPEC CHECKSUMS:
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
-  RMHBase: 1e1a35267ef078ad39e7c158733ee4f684ff39cc
+  RMHBase: b1072fa117010f37408bb07f1a5ba3ee46cc8438
   SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
 
 PODFILE CHECKSUM: 46fb32649e668448631f72b393a4c1ceda483829

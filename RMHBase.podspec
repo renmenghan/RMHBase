@@ -70,6 +70,13 @@ Pod::Spec.new do |s|
     bs.dependency 'MJRefresh'
     end
 
+
+    s.subspec 'TTRouter' do |rt|
+    rt.source_files = 'RMHBase/Classes/TTRouter/**/*'
+    rt.dependency 'RMHBase/Macro'
+    rt.dependency 'RMHBase/Category'
+    end
+    
     s.subspec 'Network' do |n|
     n.source_files = 'RMHBase/Classes/Network/**/*'
     n.dependency 'AFNetworking'
@@ -78,6 +85,7 @@ Pod::Spec.new do |s|
     n.dependency 'RMHBase/Category'
     n.dependency 'RMHBase/Des'
     n.dependency 'RMHBase/BaseController'
+    n.dependency 'RMHBase/TTRouter'
     end
 
     s.subspec 'ViewPager' do |vp|
@@ -86,12 +94,7 @@ Pod::Spec.new do |s|
     vp.dependency 'RMHBase/BaseController'
     end
     
-    
-    s.subspec 'TTRouter' do |rt|
-    rt.source_files = 'RMHBase/Classes/TTRouter/**/*'
-    rt.dependency 'RMHBase/Macro'
-    rt.dependency 'RMHBase/Category'
-    end
+
   
    s.resource_bundles = {
      'RMHBase' => ['RMHBase/Assets/*.png']
