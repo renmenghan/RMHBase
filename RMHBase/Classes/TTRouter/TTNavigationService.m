@@ -7,8 +7,7 @@
 //
 
 #import "TTNavigationService.h"
-#import "NSString+TT.h"
-#import "ShortcutMacro.h"
+
 @interface TTNavigationService()
 @property (nonatomic, strong) NSMutableDictionary *registeredModules;
 

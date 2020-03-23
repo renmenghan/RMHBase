@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "TTModuleEntrance.h"
-
+#import "NSString+TT.h"
+#import "ShortcutMacro.h"
 #define IsEmptyString(str)      (!str || [str.trim isEqualToString : @""])
 
 /**
