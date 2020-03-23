@@ -37,7 +37,7 @@
 {
     [super viewDidLoad];
     
-    [self testNetwork];
+//    [self testNetwork];
     //[self testSliderView];
  
     

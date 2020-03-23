@@ -48,6 +48,8 @@
 #import "TTNetworkManager.h"
 #import "UserService.h"
 #import "TTSliderView.h"
+#import "TTModuleEntrance.h"
+#import "TTNavigationService.h"
 #import "TTViewPagerBar.h"
 #import "TTViewPagerConfig.h"
 #import "TTViewPagerController.h"
