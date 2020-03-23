@@ -69,13 +69,6 @@ Pod::Spec.new do |s|
     bs.dependency 'MBProgressHUD'
     bs.dependency 'MJRefresh'
     end
-    
-    
-    s.subspec 'TTRouter' do |rt|
-    rt.source_files = 'RMHBase/Classes/TTRouter/**/*'
-    rt.dependency 'RMHBase/Macro'
-    rt.dependency 'RMHBase/Category'
-    end
 
     s.subspec 'Network' do |n|
     n.source_files = 'RMHBase/Classes/Network/**/*'
@@ -91,6 +84,13 @@ Pod::Spec.new do |s|
     vp.source_files = 'RMHBase/Classes/ViewPager/**/*'
     vp.dependency 'RMHBase/Category'
     vp.dependency 'RMHBase/BaseController'
+    end
+    
+    
+    s.subspec 'TTRouter' do |rt|
+    rt.source_files = 'RMHBase/Classes/TTRouter/**/*'
+    rt.dependency 'RMHBase/Macro'
+    rt.dependency 'RMHBase/Category'
     end
   
    s.resource_bundles = {

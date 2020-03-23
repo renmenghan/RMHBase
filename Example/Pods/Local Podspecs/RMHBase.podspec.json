@@ -86,18 +86,6 @@
       }
     },
     {
-      "name": "TTRouter",
-      "source_files": "RMHBase/Classes/TTRouter/**/*",
-      "dependencies": {
-        "RMHBase/Macro": [
-
-        ],
-        "RMHBase/Category": [
-
-        ]
-      }
-    },
-    {
       "name": "Network",
       "source_files": "RMHBase/Classes/Network/**/*",
       "dependencies": {
@@ -129,6 +117,18 @@
 
         ],
         "RMHBase/BaseController": [
+
+        ]
+      }
+    },
+    {
+      "name": "TTRouter",
+      "source_files": "RMHBase/Classes/TTRouter/**/*",
+      "dependencies": {
+        "RMHBase/Macro": [
+
+        ],
+        "RMHBase/Category": [
 
         ]
       }
