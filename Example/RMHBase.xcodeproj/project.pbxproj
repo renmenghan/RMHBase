@@ -21,11 +21,11 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		7991DE5ADB28E4EDDDB3DDD7 /* libPods-RMHBase_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB19A22D4A698EA9DAB1161 /* libPods-RMHBase_Tests.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		92CA7794FD1F19FDAEAAB0BC /* Pods_RMHBase_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE929DE2D8D8A01EAAB1501 /* Pods_RMHBase_Tests.framework */; };
-		A9CDC4454F8B3D7BE873E40E /* Pods_RMHBase_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4469974E93F168C15900D549 /* Pods_RMHBase_Example.framework */; };
 		E10ED2191FE21634008FE3E1 /* MineRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E10ED2181FE21634008FE3E1 /* MineRequest.m */; };
 		E10ED2241FE2B4C7008FE3E1 /* ADModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E10ED2231FE2B4C7008FE3E1 /* ADModel.m */; };
+		FF22F320D6F337E769FCDFDB /* libPods-RMHBase_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCB6E6AA813EE88BCE0BE33 /* libPods-RMHBase_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 /* Begin PBXFileReference section */
 		0453D9C8C2E995628E50129D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		32B77ACB44918D9708A596C4 /* RMHBase.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RMHBase.podspec; path = ../RMHBase.podspec; sourceTree = "<group>"; };
-		4469974E93F168C15900D549 /* Pods_RMHBase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMHBase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		481705CFCA0A13604826B6D6 /* Pods-RMHBase_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMHBase_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RMHBase_Tests/Pods-RMHBase_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		58F4D3EA4707E218841C7B98 /* Pods-RMHBase_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMHBase_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RMHBase_Example/Pods-RMHBase_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* RMHBase_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMHBase_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,11 +67,12 @@
 		6F98EF31C1D4E1A3FCFEF7DE /* Pods-RMHBase_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMHBase_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RMHBase_Example/Pods-RMHBase_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CDE929DE2D8D8A01EAAB1501 /* Pods_RMHBase_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMHBase_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB19A22D4A698EA9DAB1161 /* libPods-RMHBase_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RMHBase_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10ED2171FE21634008FE3E1 /* MineRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineRequest.h; sourceTree = "<group>"; };
 		E10ED2181FE21634008FE3E1 /* MineRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineRequest.m; sourceTree = "<group>"; };
 		E10ED2221FE2B4C7008FE3E1 /* ADModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADModel.h; sourceTree = "<group>"; };
 		E10ED2231FE2B4C7008FE3E1 /* ADModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADModel.m; sourceTree = "<group>"; };
+		ECCB6E6AA813EE88BCE0BE33 /* libPods-RMHBase_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RMHBase_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				A9CDC4454F8B3D7BE873E40E /* Pods_RMHBase_Example.framework in Frameworks */,
+				FF22F320D6F337E769FCDFDB /* libPods-RMHBase_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				92CA7794FD1F19FDAEAAB0BC /* Pods_RMHBase_Tests.framework in Frameworks */,
+				7991DE5ADB28E4EDDDB3DDD7 /* libPods-RMHBase_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,8 +129,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				4469974E93F168C15900D549 /* Pods_RMHBase_Example.framework */,
-				CDE929DE2D8D8A01EAAB1501 /* Pods_RMHBase_Tests.framework */,
+				ECCB6E6AA813EE88BCE0BE33 /* libPods-RMHBase_Example.a */,
+				BAB19A22D4A698EA9DAB1161 /* libPods-RMHBase_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,7 +225,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				08C7FA681CE3F390AFE12EAD /* [CP] Embed Pods Frameworks */,
+				D40AC5A6125A2D78ACE4C158 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,36 +312,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08C7FA681CE3F390AFE12EAD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RMHBase_Example/Pods-RMHBase_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMBase64/GTMBase64.framework",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/RMHBase/RMHBase.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMBase64.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMHBase.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RMHBase_Example/Pods-RMHBase_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AB0E457618E6E10332DC7AB6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,6 +346,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D40AC5A6125A2D78ACE4C158 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RMHBase_Example/Pods-RMHBase_Example-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RMHBase/RMHBase.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RMHBase.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RMHBase_Example/Pods-RMHBase_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
