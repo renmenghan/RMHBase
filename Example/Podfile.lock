@@ -16,33 +16,39 @@ PODS:
     - AFNetworking/NSURLSession
   - GTMBase64 (1.0.1)
   - JSONModel (1.8.0)
+  - leveldb-library (1.18.3)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.3.1)
-  - RMHBase (0.1.52):
-    - RMHBase/BaseController (= 0.1.52)
-    - RMHBase/BaseModel (= 0.1.52)
-    - RMHBase/Category (= 0.1.52)
-    - RMHBase/Des (= 0.1.52)
-    - RMHBase/Macro (= 0.1.52)
-    - RMHBase/Network (= 0.1.52)
-    - RMHBase/SliderView (= 0.1.52)
-    - RMHBase/TTRouter (= 0.1.52)
-    - RMHBase/ViewPager (= 0.1.52)
-  - RMHBase/BaseController (0.1.52):
+  - Objective-LevelDB (2.1.5):
+    - leveldb-library (~> 1.18.2)
+  - RMHBase (0.1.53):
+    - RMHBase/BaseController (= 0.1.53)
+    - RMHBase/BaseModel (= 0.1.53)
+    - RMHBase/CacheService (= 0.1.53)
+    - RMHBase/Category (= 0.1.53)
+    - RMHBase/Des (= 0.1.53)
+    - RMHBase/Macro (= 0.1.53)
+    - RMHBase/Network (= 0.1.53)
+    - RMHBase/SliderView (= 0.1.53)
+    - RMHBase/TTRouter (= 0.1.53)
+    - RMHBase/ViewPager (= 0.1.53)
+  - RMHBase/BaseController (0.1.53):
     - MBProgressHUD
     - MJRefresh
     - RMHBase/BaseModel
     - RMHBase/Category
     - RMHBase/Des
     - RMHBase/Macro
-  - RMHBase/BaseModel (0.1.52):
+  - RMHBase/BaseModel (0.1.53):
     - JSONModel
-  - RMHBase/Category (0.1.52):
+  - RMHBase/CacheService (0.1.53):
+    - Objective-LevelDB
+  - RMHBase/Category (0.1.53):
     - SDWebImage
-  - RMHBase/Des (0.1.52):
+  - RMHBase/Des (0.1.53):
     - GTMBase64
-  - RMHBase/Macro (0.1.52)
-  - RMHBase/Network (0.1.52):
+  - RMHBase/Macro (0.1.53)
+  - RMHBase/Network (0.1.53):
     - AFNetworking
     - RMHBase/BaseController
     - RMHBase/BaseModel
@@ -50,11 +56,11 @@ PODS:
     - RMHBase/Des
     - RMHBase/Macro
     - RMHBase/TTRouter
-  - RMHBase/SliderView (0.1.52)
-  - RMHBase/TTRouter (0.1.52):
+  - RMHBase/SliderView (0.1.53)
+  - RMHBase/TTRouter (0.1.53):
     - RMHBase/Category
     - RMHBase/Macro
-  - RMHBase/ViewPager (0.1.52):
+  - RMHBase/ViewPager (0.1.53):
     - RMHBase/BaseController
     - RMHBase/Category
   - SDWebImage (5.5.2):
@@ -72,8 +78,10 @@ SPEC REPOS:
     - AFNetworking
     - GTMBase64
     - JSONModel
+    - leveldb-library
     - MBProgressHUD
     - MJRefresh
+    - Objective-LevelDB
     - SDWebImage
 
 EXTERNAL SOURCES:
@@ -84,9 +92,11 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  leveldb-library: 10fb39c39e243db4af1828441162405bbcec1404
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
-  RMHBase: b1072fa117010f37408bb07f1a5ba3ee46cc8438
+  Objective-LevelDB: fa075efd9d0be645aee51847cc3ee70cdadb80ce
+  RMHBase: 2b9c757fccd95781c21aa86ba616c187e6429b6f
   SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
 
 PODFILE CHECKSUM: 46fb32649e668448631f72b393a4c1ceda483829

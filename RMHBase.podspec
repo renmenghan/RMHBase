@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RMHBase'
-  s.version          = '0.1.52'
+  s.version          = '0.1.53'
   s.summary          = 'RMHBase'
 
 # This description is used to generate tags and improve search results.
@@ -94,6 +94,10 @@ Pod::Spec.new do |s|
     vp.dependency 'RMHBase/BaseController'
     end
     
+    s.subspec 'CacheService' do |cs|
+    cs.source_files = 'RMHBase/Classes/CacheService/**/*'
+    cs.dependency 'Objective-LevelDB'
+    end
 
   
    s.resource_bundles = {
