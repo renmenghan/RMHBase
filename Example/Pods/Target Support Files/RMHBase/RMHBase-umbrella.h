@@ -31,7 +31,6 @@
 #import "NSURL+TT.h"
 #import "TTAppThemeHelper.h"
 #import "UIButton+TT.h"
-#import "UIColor+TT.h"
 #import "UIDevice+TT.h"
 #import "UIImage+TT.h"
 #import "UIImageView+TT.h"
