@@ -7,8 +7,6 @@
 
 #import "UIColor+TT.h"
 
-#import <AppKit/AppKit.h>
-
 
 @implementation UIColor (TT)
 

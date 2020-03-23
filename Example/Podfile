@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://gitee.com/rrrmmmhhh/RMHComponentSpecs.git'
-#use_frameworks!
+use_frameworks!
 
 target 'RMHBase_Example' do
   pod 'RMHBase', :path => '../'
