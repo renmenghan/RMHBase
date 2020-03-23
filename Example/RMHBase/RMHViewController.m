@@ -39,53 +39,7 @@
     
     //[self testNetwork];
     //[self testSliderView];
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    self.pagerVC.view.frame = self.view.bounds;
-    [self.view addSubview:self.pagerVC.view];
-    
-    NSArray *items = @[@"专辑", @"声音", @"下载中"];
-    UIViewController *vc1 = [UIViewController new];
-    vc1.view.backgroundColor = [UIColor redColor];
-    
-    UIViewController *vc2 = [UIViewController new];
-    vc2.view.backgroundColor = [UIColor greenColor];
-    
-    UIViewController *vc3 = [UIViewController new];
-    vc3.view.backgroundColor = [UIColor yellowColor];
-    
-    [self.pagerVC setUpWithItems:items childVCs:@[vc1,vc2,vc3]];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSArray *items = @[@"专辑专辑", @"声xxx音", @"下载中xxxx", @"下载中xxxx", @"下载中xxxx"];
-        
-        // 添加几个自控制器
-        // 在contentView, 展示子控制器的视图内容
-        
-        UIViewController *vc1 = [UIViewController new];
-        vc1.view.backgroundColor = [UIColor redColor];
-        
-        UIViewController *vc2 = [UIViewController new];
-        vc2.view.backgroundColor = [UIColor greenColor];
-        
-        UIViewController *vc3 = [UIViewController new];
-        vc3.view.backgroundColor = [UIColor yellowColor];
-        
-        UIViewController *vc4 = [UIViewController new];
-        vc4.view.backgroundColor = [UIColor greenColor];
-        
-        UIViewController *vc5 = [UIViewController new];
-        vc5.view.backgroundColor = [UIColor yellowColor];
-        
-        
-        [self.pagerVC setUpWithItems:items childVCs:@[vc1, vc2, vc3, vc4, vc5]];
-        
-        [self.pagerVC.viewPagerBar updateWithConfig:^(TTViewPagerConfig *config) {
-            
-            config.p_barBackColor([UIColor greenColor]).p_itemNormalC([UIColor redColor]).p_indicatorC([UIColor blackColor]);
-            
-        }];
-    });
-    
+ 
     
 }
 - (void)testNetwork
@@ -112,6 +66,57 @@
     
     _sliderView = [[TTSliderView alloc] initWithFrame:CGRectMake(0, 100, self.view.width, self.view.width/2) withDelete:self];;
     [self.view addSubview:_sliderView];
+}
+
+- (void)testPager
+{
+    self.automaticallyAdjustsScrollViewInsets = NO;
+     self.pagerVC.view.frame = self.view.bounds;
+     [self.view addSubview:self.pagerVC.view];
+     
+     NSArray *items = @[@"test1", @"test2", @"test1"];
+     UIViewController *vc1 = [UIViewController new];
+     vc1.view.backgroundColor = [UIColor redColor];
+     
+     UIViewController *vc2 = [UIViewController new];
+     vc2.view.backgroundColor = [UIColor greenColor];
+     
+     UIViewController *vc3 = [UIViewController new];
+     vc3.view.backgroundColor = [UIColor yellowColor];
+     
+     [self.pagerVC setUpWithItems:items childVCs:@[vc1,vc2,vc3]];
+     
+     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+         NSArray *items = @[@"test1", @"test12", @"test14", @"test15", @"test15"];
+         
+         // 添加几个自控制器
+         // 在contentView, 展示子控制器的视图内容
+         
+         UIViewController *vc1 = [UIViewController new];
+         vc1.view.backgroundColor = [UIColor redColor];
+         
+         UIViewController *vc2 = [UIViewController new];
+         vc2.view.backgroundColor = [UIColor greenColor];
+         
+         UIViewController *vc3 = [UIViewController new];
+         vc3.view.backgroundColor = [UIColor yellowColor];
+         
+         UIViewController *vc4 = [UIViewController new];
+         vc4.view.backgroundColor = [UIColor greenColor];
+         
+         UIViewController *vc5 = [UIViewController new];
+         vc5.view.backgroundColor = [UIColor yellowColor];
+         
+         
+         [self.pagerVC setUpWithItems:items childVCs:@[vc1, vc2, vc3, vc4, vc5]];
+         
+         [self.pagerVC.viewPagerBar updateWithConfig:^(TTViewPagerConfig *config) {
+             
+             config.p_barBackColor([UIColor greenColor]).p_itemNormalC([UIColor redColor]).p_indicatorC([UIColor blackColor]);
+             
+         }];
+     });
+     
 }
 
 #pragma mark - SliderViewdelegate

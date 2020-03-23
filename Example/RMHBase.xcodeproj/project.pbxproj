@@ -318,7 +318,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RMHBase_Example/Pods-RMHBase_Example-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-RMHBase_Example/Pods-RMHBase_Example-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/RMHBase/RMHBase.bundle",
 			);
@@ -329,7 +329,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RMHBase_Example/Pods-RMHBase_Example-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RMHBase_Example/Pods-RMHBase_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AB0E457618E6E10332DC7AB6 /* [CP] Check Pods Manifest.lock */ = {
